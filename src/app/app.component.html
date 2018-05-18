@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Aplicacion Autentificacion
+  </h1>
+<div *ngIf="userDetail">
+  <img [src]="userDetail.photoURL">
+  <h2>{{ userDetail.displayName }}</h2>
+    <button (click)="onFbLogOut()">Cerrar Sesion</button>
+</div>
+<div *ngIf="!userDetail">
+  <button (click)="onFbLogin()">Inicias Seion con Facebook</button>
+</div>
+
+<h2>Here are some links to help you start: </h2>
+</div>
